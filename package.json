@@ -1,0 +1,28 @@
+{
+  "name": "organic-aprico-nuxt",
+  "version": "1.0.0",
+  "description": "Organic Aprico website built with Nuxt.js and Tailwind CSS",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "nuxt": "^3.13.0",
+    "vue": "^3.4.0",
+    "clsx": "2.1.1",
+    "tailwind-merge": "2.5.4",
+    "class-variance-authority": "^0.7.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.12.0",
+    "typescript": "^5.3.0",
+    "tailwindcss": "^3.4.0",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.0"
+  }
+}

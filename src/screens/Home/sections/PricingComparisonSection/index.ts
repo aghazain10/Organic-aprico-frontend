@@ -1,0 +1,1 @@
+export { PricingComparisonSection } from "./PricingComparisonSection";
