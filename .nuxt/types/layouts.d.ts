@@ -1,4 +1,4 @@
-import _default from "/home/project/layouts/default.vue";
+import _default from "/home/rizvee/projects/Organic-aprico-frontend/layouts/default.vue";
 import type { ComputedRef, MaybeRef } from 'vue'
 declare module 'nuxt/app' {
   interface NuxtLayouts {
