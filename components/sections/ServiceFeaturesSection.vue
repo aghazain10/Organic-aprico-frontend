@@ -1,10 +1,10 @@
 <template>
-    <section class="relative w-full bg-white overflow-hidden">
+    <section class="relative w-full bg-white overflow-hidden pt-20">
         <div class="container mx-auto px-4 max-w-[1450px]">
             <div class="relative min-h-[974px]">
                 <div>
-                    <div class="relative z-10 mb-8">
-                        <div class="flex items-start gap-4">
+                    <div class="relative z-10 flex justify-between">
+                        <div class="flex items-start gap-4 flex-col">
                             <div>
                                 <h3
                                     class="font-oswald font-medium text-[#f7ba00] text-5xl tracking-[0] leading-[normal] -mb-20"
@@ -23,58 +23,69 @@
                                     </span>
                                 </h2>
                             </div>
+                            <div class="relative pt-8">
+                                <img
+                                    class="w-full max-w-[491px] h-auto"
+                                    alt="Mg copy"
+                                    src="/shilajit.png"
+                                />
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="relative">
-                        <div class="flex justify-end mb-[-200px] relative z-20">
-                            <Card
-                                class="w-full max-w-[679px] bg-[#355e3be6] rounded-[15px] shadow-[-11px_0px_24px_#00000029,-44px_0px_44px_#00000024,-99px_0px_59px_#00000014,-176px_0px_70px_#00000005,-275px_0px_77px_transparent] border-0"
+                        <div class="relative">
+                            <div
+                                class="flex justify-end mb-[-200px] relative z-20"
                             >
-                                <CardContent class="p-12 space-y-8">
-                                    <p
-                                        class="font-poppins font-light text-white text-lg tracking-[0] leading-[normal]"
-                                    >
-                                        Shilajit Is A Natural Substance That
-                                        Forms Over Centuries From The Slow
-                                        Decomposition Of Plants, Herbs, And
-                                        Organic Matter In High-altitude Mountain
-                                        Ranges Such As The Himalayas Gilgit
-                                        Baltistan. Raw Shilajit Is Found In Rock
-                                        Form And Contains Many Impurities. To
-                                        Make It Consumable, It Goes Through An
-                                        8-stage Ultra-filtration And
-                                        Purification Process And Over 40 Days Of
-                                        Direct Sunlight Dehydration, Supported
-                                        By Both Traditional Practices And
-                                        Scientific Methods. This Process Removes
-                                        Arsenic, Heavy Metals, Bacteria, Fungi,
-                                        And Other Impurities, Making It Safe For
-                                        Human Consumption.
-                                    </p>
-                                    <p
-                                        class="font-poppins font-light text-white text-lg tracking-[0] leading-[normal]"
-                                    >
-                                        After Purification, Shilajit Becomes A
-                                        Dark, Sticky Resin Rich In Fulvic Acid,
-                                        Humic Acid, Bioactive Compounds, And
-                                        More Than 85 Minerals. In The Global
-                                        Market, Most Available Shilajit Is
-                                        Sourced From Lower Altitudes, Processed
-                                        With Outdated Filtration Methods, And
-                                        Often Mixed With Additives That
-                                        Compromise Its Safety And Potency.
-                                        Organic Aprico Is A Native Producer,
-                                        While Most Others Are Sellers Or
-                                        Resellers, Making It Difficult For
-                                        Consumers To Identify Genuine Sources.
-                                        Organic Aprico, Based In
-                                        Gilgit-baltistan, Operates A Scientific
-                                        8-stage Ultrafiltration And Purification
-                                        Facility.
-                                    </p>
-                                </CardContent>
-                            </Card>
+                                <Card
+                                    class="w-full max-w-[679px] bg-[#355e3be6] rounded-[15px] shadow-[-11px_0px_24px_#00000029,-44px_0px_44px_#00000024,-99px_0px_59px_#00000014,-176px_0px_70px_#00000005,-275px_0px_77px_transparent] border-0"
+                                >
+                                    <CardContent class="p-12 space-y-8">
+                                        <p
+                                            class="font-poppins font-light text-white text-lg tracking-[0] leading-[normal]"
+                                        >
+                                            Shilajit Is A Natural Substance That
+                                            Forms Over Centuries From The Slow
+                                            Decomposition Of Plants, Herbs, And
+                                            Organic Matter In High-altitude
+                                            Mountain Ranges Such As The
+                                            Himalayas Gilgit Baltistan. Raw
+                                            Shilajit Is Found In Rock Form And
+                                            Contains Many Impurities. To Make It
+                                            Consumable, It Goes Through An
+                                            8-stage Ultra-filtration And
+                                            Purification Process And Over 40
+                                            Days Of Direct Sunlight Dehydration,
+                                            Supported By Both Traditional
+                                            Practices And Scientific Methods.
+                                            This Process Removes Arsenic, Heavy
+                                            Metals, Bacteria, Fungi, And Other
+                                            Impurities, Making It Safe For Human
+                                            Consumption.
+                                        </p>
+                                        <p
+                                            class="font-poppins font-light text-white text-lg tracking-[0] leading-[normal]"
+                                        >
+                                            After Purification, Shilajit Becomes
+                                            A Dark, Sticky Resin Rich In Fulvic
+                                            Acid, Humic Acid, Bioactive
+                                            Compounds, And More Than 85
+                                            Minerals. In The Global Market, Most
+                                            Available Shilajit Is Sourced From
+                                            Lower Altitudes, Processed With
+                                            Outdated Filtration Methods, And
+                                            Often Mixed With Additives That
+                                            Compromise Its Safety And Potency.
+                                            Organic Aprico Is A Native Producer,
+                                            While Most Others Are Sellers Or
+                                            Resellers, Making It Difficult For
+                                            Consumers To Identify Genuine
+                                            Sources. Organic Aprico, Based In
+                                            Gilgit-baltistan, Operates A
+                                            Scientific 8-stage Ultrafiltration
+                                            And Purification Facility.
+                                        </p>
+                                    </CardContent>
+                                </Card>
+                            </div>
                         </div>
                     </div>
 

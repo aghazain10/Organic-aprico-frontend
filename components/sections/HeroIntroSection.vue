@@ -45,14 +45,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="relative pt-8">
-                        <img
-                            class="w-full max-w-[491px] h-auto"
-                            alt="Mg copy"
-                            src="/shilajit.png"
-                        />
-                    </div>
                 </div>
 
                 <div class="relative flex justify-center lg:justify-end">
