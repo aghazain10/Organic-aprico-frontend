@@ -1,201 +1,135 @@
 <template>
-    <section class="relative w-full bg-white overflow-hidden py-12 lg:py-32">
-        <div class="relative max-w-[1440px] mx-auto px-4">
-            <!-- Decorative vectors (visible only on desktop, repositioned slightly for better overflow handling) -->
-            <img
-                class="hidden lg:block absolute -top-32 -left-48 w-[300px] h-auto pointer-events-none"
-                alt="Vector"
-                src="/vector.svg"
-            />
-            <img
-                class="hidden lg:block absolute -top-48 -left-64 w-[200px] h-auto pointer-events-none"
-                alt="Vector"
-                src="/vector-1.svg"
-            />
+    <section
+        class="relative w-full bg-gradient-to-b from-white via-stone-50 to-white py-16 lg:py-28 overflow-hidden"
+    >
+        <div class="relative max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
+            <!-- Soft background blobs -->
+            <div class="absolute inset-0 pointer-events-none">
+                <div
+                    class="absolute -top-20 -left-20 w-80 h-80 bg-amber-50/50 rounded-full blur-3xl"
+                ></div>
+                <div
+                    class="absolute bottom-10 right-10 w-96 h-96 bg-emerald-50/40 rounded-full blur-3xl"
+                ></div>
+            </div>
 
-            <!-- Main heading -->
-            <div class="text-center mb-12 lg:mb-20">
+            <!-- Heading -->
+            <div class="text-center mb-14 lg:mb-20 relative z-10">
                 <h2
-                    class="inline-block font-oswald font-normal text-[40px] lg:text-[55.9px] tracking-[0.94px] lg:tracking-[1.68px]"
+                    class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight"
                 >
-                    <span class="font-medium text-[#f7ba00]">Our</span>
+                    <span class="text-amber-600 font-semibold">Our 8-Step</span>
                     <span
-                        class="font-medium text-[#f7ba00] text-[56px] lg:text-[59.7px]"
-                        >8</span
+                        class="text-emerald-800 font-semibold block sm:inline"
                     >
-                    <span class="font-medium text-[#f7ba00]"
-                        >-Steps<br class="lg:hidden"
-                    /></span>
-                    <span
-                        class="font-[Feeling_Passionate_Personal_Use-Regular] text-[#355e3b]"
+                        Purification Process</span
                     >
-                        Purification Process
-                    </span>
                 </h2>
-
                 <p
-                    class="font-poppins font-normal text-black text-base lg:text-[17.1px] tracking-[0.68px] leading-relaxed mt-8 max-w-[690px] mx-auto"
+                    class="mt-5 text-slate-600 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed"
                 >
-                    Every batch goes through a carefully controlled,
-                    chemical-free purification method designed to ensure maximum
-                    purity, safety, and mineral richness. Our 8-step process
-                    guarantees consistent, high-quality Shilajit you can trust.
+                    From high Himalayan peaks to your hands — gently purified,
+                    naturally, without chemicals.
                 </p>
             </div>
 
-            <!-- Subheading (assumed completion; changed to dark text as white on white bg doesn't make sense) -->
-            <h3
-                class="text-center font-oswald font-semibold text-[#355e3b] text-4xl lg:text-5xl mt-16 lg:mt-24 mb-16 lg:mb-32"
-            >
-                How Can Shilajit Be So Pure?
-            </h3>
-
-            <!-- Process Steps - Responsive zigzag layout -->
-            <div class="space-y-24 lg:space-y-48">
+            <!-- Steps -->
+            <div class="relative mt-10 lg:mt-16">
                 <div
-                    v-for="(step, index) in processSteps"
-                    :key="index"
-                    class="flex flex-col gap-12 lg:gap-24 items-center"
-                    :class="{ 'lg:flex-row-reverse': index % 2 === 1 }"
+                    class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10 xl:gap-12 relative z-10"
                 >
-                    <!-- Text Content -->
                     <div
-                        class="relative w-full lg:w-1/2 text-center lg:text-left"
-                        :class="{ 'lg:text-right': index % 2 === 1 }"
+                        v-for="(step, index) in visibleSteps"
+                        :key="index"
+                        class="group relative bg-white rounded-2xl shadow-sm shadow-slate-200/60 border border-slate-100/80 overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-slate-300/40 hover:-translate-y-1"
                     >
-                        <!-- Big faded number (overlaps toward the image on desktop) -->
-                        <div
-                            class="absolute top-1/2 -translate-y-1/2 pointer-events-none text-[#f7ba00] font-epilogue font-extrabold opacity-20"
-                            :class="[
-                                'text-[100px] lg:text-[173px]',
-                                step.numberSize ? `lg:${step.numberSize}` : '',
-                                step.numberTracking
-                                    ? `lg:${step.numberTracking}`
-                                    : '',
-                                step.numberLeading
-                                    ? `lg:${step.numberLeading}`
-                                    : '',
-                                index % 2 === 0
-                                    ? 'right-0 lg:-right-12'
-                                    : 'left-0 lg:-left-12',
-                            ]"
-                        >
-                            {{ step.number }}
+                        <!-- Step number – top left corner of the whole card -->
+                        <div class="absolute top-4 left-4 z-20">
+                            <div
+                                class="w-11 h-11 rounded-full bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center shadow-md shadow-amber-600/30 border-2 border-white"
+                            >
+                                <span class="text-white text-xl font-bold">{{
+                                    step.number
+                                }}</span>
+                            </div>
                         </div>
 
-                        <div class="relative z-10">
-                            <div
-                                class="font-[Feeling_Passionate_Personal_Use-Regular] text-[#355e3b] text-[36px] lg:text-[40.3px] tracking-[0.40px] leading-tight"
-                            >
-                                Step
-                            </div>
+                        <!-- Image container – centered image -->
+                        <div
+                            class="h-48 sm:h-56 lg:h-60 relative bg-slate-50 flex items-center justify-center overflow-hidden"
+                        >
+                            <img
+                                :src="step.image"
+                                :alt="step.title"
+                                class="max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-105"
+                            />
+                        </div>
 
-                            <div
-                                class="font-poppins font-bold text-black text-xl lg:text-sm mt-4 lg:mt-6 max-w-[300px] mx-auto lg:mx-0"
+                        <!-- Text content -->
+                        <div class="p-6 sm:p-7 pt-6 text-center">
+                            <h3
+                                class="text-lg sm:text-xl font-semibold text-emerald-900 mb-3"
                             >
                                 {{ step.title }}
-                            </div>
-
-                            <div
-                                class="font-poppins font-normal text-black text-base lg:text-[15.5px] tracking-[0.62px] leading-relaxed mt-6 lg:mt-8 max-w-[300px] mx-auto lg:mx-0"
+                            </h3>
+                            <p
+                                class="text-slate-600 text-sm sm:text-[15.2px] leading-relaxed"
                             >
-                                <template
-                                    v-if="typeof step.description === 'string'"
-                                >
-                                    {{ step.description }}
-                                </template>
-                                <template v-else>
-                                    <span>High-altitude </span>
-                                    <span class="font-bold">Shilajit</span>
-                                    <span>
-                                        is sourced directly from the mountains
-                                        to maintain purity from the very
-                                        beginning.</span
-                                    >
-                                </template>
-                            </div>
+                                {{ step.description }}
+                            </p>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Image / Card -->
-                    <div class="relative w-full lg:w-1/2">
-                        <Card
-                            class="w-full h-[300px] lg:h-[283px] bg-[#d9d9d9] rounded-[12px] shadow-lg border-0"
+                <!-- CTA -->
+                <div class="mt-16 lg:mt-24 text-center relative z-10">
+                    <a
+                        href="/purification-process"
+                        class="inline-flex items-center gap-3 px-8 py-5 bg-emerald-700 hover:bg-emerald-800 text-white font-medium rounded-full text-lg transition-all duration-300 shadow-lg shadow-emerald-900/20 hover:shadow-xl hover:shadow-emerald-900/30 hover:-translate-y-0.5"
+                    >
+                        See the Complete 8-Step Journey
+                        <svg
+                            class="w-5 h-5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
                         >
-                            <CardContent class="p-0 w-full h-full" />
-                        </Card>
-
-                        <!-- Per-step decor image (example for step 1; adjust/add as needed) -->
-                        <img
-                            v-if="step.decorSrc"
-                            class="hidden lg:block absolute"
-                            :class="[
-                                step.decorTop || 'top-full',
-                                step.decorLeft || 'left-1/2',
-                                step.decorWidth,
-                                step.decorHeight,
-                            ]"
-                            alt="Objects"
-                            :src="step.decorSrc"
-                        />
-                    </div>
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3"
+                            />
+                        </svg>
+                    </a>
                 </div>
             </div>
-
-            <!-- Bottom decorative images (desktop only) -->
-            <img
-                class="hidden lg:block absolute bottom-0 right-0 w-[344px] h-[357px] pointer-events-none"
-                alt="Objects"
-                src="/objects.svg"
-            />
-            <img
-                class="hidden lg:block absolute bottom-[-200px] left-1/2 -translate-x-1/2 w-[515px] h-[250px] pointer-events-none"
-                alt="Group"
-                src="/group-75.png"
-            />
-            <img
-                class="hidden lg:block absolute top-0 right-0 w-[401px] h-full pointer-events-none"
-                alt="Bg"
-                src="/bg-01-3-1.png"
-            />
         </div>
     </section>
 </template>
 
 <script setup lang="ts">
-import Card from "~/components/ui/Card.vue";
-import CardContent from "~/components/ui/CardContent.vue";
-
-const processSteps = [
+const visibleSteps = [
     {
         number: "1",
-        title: "Raw Shilajit Collection",
-        description: null, // Triggers the special multi-span description
-        numberSize: "text-[201.7px]",
-        numberTracking: "tracking-[2.02px]",
-        numberLeading: "leading-[256.0px]",
-        decorSrc: "/objects-1.svg",
-        decorWidth: "w-[222px]",
-        decorHeight: "h-[235px]",
+        title: "High-Altitude Collection",
+        description:
+            "Raw Shilajit is sustainably hand-harvested from pristine Himalayan regions above 14,000 ft.",
+        image: "/shilajit.png",
     },
     {
         number: "2",
-        title: "Washing & Filtering",
+        title: "Gentle Washing & Filtering",
         description:
-            "Organic filtering removes stones, soil, and unwanted particles.",
-        numberSize: "text-[193.9px]",
-        numberTracking: "tracking-[1.94px]",
-        numberLeading: "leading-[246.1px]",
+            "Natural mountain water and multi-stage filtration remove dirt, rocks and impurities.",
+        image: "/shilajit.png",
     },
     {
         number: "3",
-        title: "Low-Heat Extraction",
+        title: "Low-Temperature Extraction",
         description:
-            "Gentle heating preserves minerals without burning or damaging nutrients.",
-        numberSize: "text-[173px]",
-        numberTracking: "tracking-[1.73px]",
-        numberLeading: "leading-[219.6px]",
+            "Careful slow heating preserves fulvic acid, minerals and heat-sensitive compounds.",
+        image: "/shilajit.png",
     },
-    // Add remaining steps here with similar structure when ready
 ];
 </script>

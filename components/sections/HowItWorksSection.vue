@@ -1,135 +1,158 @@
 <template>
-    <section class="relative w-full bg-white py-0">
-        <div class="relative w-full h-[1680px] max-w-[1440px] mx-auto">
-            <div
-                class="absolute top-0 left-[calc(50.00%_-_173px)] w-[347px] font-oswald font-semibold text-[#f7ba00] text-5xl tracking-[0] leading-[normal]"
-            >
-                How Can Shilajeet
-            </div>
-
-            <div
-                class="absolute top-[25px] left-[calc(50.00%_-_241px)] w-[559px] h-[126px]"
-            >
-                <div
-                    class="absolute top-7 left-[calc(50.00%_-_279px)] w-[528px] font-[Feeling_Passionate_Personal_Use-Regular] text-[#355e3b] text-[58px] tracking-[-0.58px] leading-[normal]"
+    <section class="relative w-full bg-white overflow-hidden">
+        <div
+            class="relative w-full max-w-[1440px] mx-auto px-4 sm:px-6 md:px-10 lg:px-0"
+        >
+            <!-- Heading -->
+            <div class="relative pt-10 md:pt-16 lg:pt-20 text-center">
+                <h2
+                    class="font-oswald font-semibold text-[#f7ba00] text-4xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-[5.5rem] tracking-tight leading-tight"
                 >
-                    Power Up Your Day
-                </div>
+                    How Can Shilajeet
+                </h2>
 
-                <div
-                    class="absolute top-0 left-[calc(50.00%_+_221px)] w-[54px] font-[Feeling_Passionate_Personal_Use-Regular] text-white text-[35.6px] tracking-[-0.36px] leading-[normal]"
-                >
-                    ?
-                </div>
-            </div>
-
-            <div
-                class="absolute top-[148px] left-[calc(50.00%_-_163px)] w-[325px] font-poppins font-normal text-black text-[11.7px] text-center tracking-[0.47px] leading-[normal]"
-            >
-                Stay sharp at work with improved focus and reduced mental
-                fatigue. Boost your performance in sports with enhanced energy
-                and stamina. OrganicAprico® Shilajit gives you the natural edge
-                you need to thrive from morning to night.
-            </div>
-
-            <img
-                class="absolute top-[269px] left-[calc(50.00%_-_720px)] w-[1116px] h-[1190px]"
-                alt="Runner"
-                src="/runner.png"
-            />
-
-            <img
-                class="absolute top-[102px] left-[1153px] w-[287px] h-[1287px]"
-                alt="Bg"
-                src="/bg-01-1-2.png"
-            />
-
-            <div
-                class="absolute top-[1079px] left-[calc(50.00%_-_156px)] w-[255px] font-oswald font-bold text-[#f7ba00] text-[20.7px] tracking-[0] leading-[normal]"
-            >
-                ORGANICAPRICO ORIGINAL IS
-            </div>
-
-            <div
-                class="absolute top-[1103px] left-[calc(50.00%_-_235px)] w-[413px] font-[Feeling_Passionate_Personal_Use-Regular] text-[#355e3b] text-[41.5px] tracking-[-0.41px] leading-[normal]"
-            >
-                Pure Mountain Power
-            </div>
-
-            <div
-                class="absolute top-[1167px] left-[calc(50.00%_-_340px)] w-[623px] font-poppins font-normal text-black text-[13px] text-center tracking-[0.52px] leading-[normal]"
-            >
-                Shilajit is a naturally alkaline superfood packed with vital
-                minerals, trace elements, and nourishing compounds. Formed over
-                thousands of years by the pressure of ancient plant matter, it
-                is one of nature's rarest resources — found only in a few
-                high-altitude mountain ranges around the world.
-            </div>
-
-            <img
-                class="absolute top-[1235px] left-0 w-[1440px] h-[445px]"
-                alt="Mountains"
-                src="/mountains-01-1-1.png"
-            />
-
-            <img
-                class="absolute left-[324px] top-[1290px] w-[293px] h-[198px] object-cover"
-                alt="Mg copy"
-                src="/-mg-2759-copy-removebg-preview-2.png"
-            />
-
-            <img
-                class="absolute left-[705px] top-[1290px] w-[293px] h-[198px] object-cover"
-                alt="Mg copy"
-                src="/-mg-2759-copy-removebg-preview-2.png"
-            />
-
-            <Button
-                variant="outline"
-                class="absolute top-[1521px] left-[573px] w-[185px] h-[52px] rounded-[28.5px] border-[1.3px] border-black bg-transparent hover:bg-transparent text-black"
-            >
-                <div class="flex items-center gap-[10.8px]">
-                    <svg
-                        class="w-[14.9px] h-[27.08px] rotate-90 text-black"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
+                <div class="mt-1 flex justify-center items-baseline gap-2">
+                    <h1
+                        class="font-['Feeling_Passionate_Personal_Use-Regular'] text-[#355e3b] text-5xl sm:text-6xl md:text-7xl lg:text-[4.8rem] xl:text-[5.8rem] tracking-[-0.03em] leading-none"
                     >
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M9 5l7 7-7 7"
-                        />
-                    </svg>
+                        Power Up Your Day
+                    </h1>
                     <span
-                        class="[-webkit-text-stroke:0.65px_#ffffff] font-poppins font-normal text-black text-[13px] tracking-[-0.65px] leading-[normal]"
+                        class="font-['Feeling_Passionate_Personal_Use-Regular'] text-white text-3xl sm:text-4xl md:text-5xl"
+                        >?</span
                     >
-                        Select your size
-                    </span>
                 </div>
-            </Button>
 
-            <div class="absolute top-[1584px] left-[554px] w-[244px] h-[65px]">
-                <div v-for="(option, index) in sizeOptions" :key="index">
+                <p
+                    class="mt-5 md:mt-7 max-w-2xl lg:max-w-xl mx-auto font-poppins text-black text-sm sm:text-base lg:text-[11.7px] tracking-[0.47px] leading-relaxed text-center px-4 sm:px-0"
+                >
+                    Stay sharp at work with improved focus and reduced mental
+                    fatigue. Boost your performance in sports with enhanced
+                    energy and stamina. OrganicAprico® Shilajit gives you the
+                    natural edge you need to thrive from morning to night.
+                </p>
+            </div>
+
+            <!-- Runner + decorative bg -->
+            <div class="relative mt-8 md:mt-12 lg:mt-16">
+                <div class="relative mx-auto max-w-[1116px] flex justify-start">
                     <img
-                        :class="[
-                            'absolute',
-                            option.top,
-                            option.left,
-                            option.width,
-                            option.height,
-                        ]"
-                        alt="Group"
-                        :src="option.image"
+                        src="/running.png"
+                        alt="Runner"
+                        class="w-full max-w-[900px] h-auto object-contain"
+                        loading="lazy"
                     />
-                    <div
-                        :class="[
-                            'absolute top-[49px] [-webkit-text-stroke:0.55px_#ffffff] font-poppins font-extralight text-black text-[11.6px] tracking-[-0.58px] leading-[normal]',
-                            option.textLeft,
-                        ]"
+
+                    <img
+                        src="/bg-01-1-2.png"
+                        alt="Background decoration"
+                        class="absolute -top-12 sm:-top-16 md:-top-20 right-0 lg:right-[-40px] w-40 sm:w-56 md:w-72 lg:w-[287px] h-auto opacity-80 lg:opacity-100 hidden md:block"
+                        loading="lazy"
+                    />
+                </div>
+            </div>
+
+            <!-- Pure Mountain Power + mountains + overlays -->
+            <div class="relative mt-10 lg:mt-16">
+                <!-- Text block - closer spacing -->
+                <div class="text-center relative z-10">
+                    <h3
+                        class="font-oswald font-bold text-[#f7ba00] text-lg sm:text-xl md:text-2xl lg:text-[20.7px]"
                     >
-                        {{ option.label }}
+                        ORGANICAPRICO ORIGINAL IS
+                    </h3>
+
+                    <h2
+                        class="mt-1 font-['Feeling_Passionate_Personal_Use-Regular'] text-[#355e3b] text-4xl sm:text-5xl md:text-6xl lg:text-[41.5px] tracking-[-0.41px] leading-tight"
+                    >
+                        Pure Mountain Power
+                    </h2>
+
+                    <p
+                        class="mt-4 md:mt-5 max-w-3xl mx-auto font-poppins text-black text-sm sm:text-[13px] lg:text-[13px] tracking-[0.52px] leading-relaxed px-5 sm:px-8 lg:px-0"
+                    >
+                        Shilajit is a naturally alkaline superfood packed with
+                        vital minerals, trace elements, and nourishing
+                        compounds. Formed over thousands of years by the
+                        pressure of ancient plant matter, it is one of nature's
+                        rarest resources — found only in a few high-altitude
+                        mountain ranges around the world.
+                    </p>
+                </div>
+
+                <!-- Mountains background -->
+                <div class="relative mt-6 lg:mt-10">
+                    <img
+                        src="/mountains-01-1-1.png"
+                        alt="Mountains"
+                        class="w-full h-auto object-cover"
+                        loading="lazy"
+                    />
+
+                    <!-- Two product preview images (the missing ones) -->
+                    <img
+                        src="/-mg-2759-copy-removebg-preview-2.png"
+                        alt="Product showcase"
+                        class="absolute hidden lg:block w-[220px] xl:w-[260px] 2xl:w-[293px] h-auto object-contain left-[20%] xl:left-[23%] 2xl:left-[22.5%] top-[38%] lg:top-[10%]"
+                        loading="lazy"
+                    />
+
+                    <img
+                        src="/-mg-2759-copy-removebg-preview-2.png"
+                        alt="Product showcase"
+                        class="absolute hidden lg:block w-[220px] xl:w-[260px] 2xl:w-[293px] h-auto object-contain right-[20%] xl:right-[23%] 2xl:right-[22.5%] top-[38%] lg:top-[10%]"
+                        loading="lazy"
+                    />
+
+                    <!-- Select your size button - placed on the mountain -->
+                    <div
+                        class="absolute left-1/2 -translate-x-1/2 top-[2%] lg:top-[56%] xl:top-[56%] z-20"
+                    >
+                        <button
+                            class="group flex items-center gap-3 sm:gap-4 px-6 sm:px-8 py-1 sm:py-1 rounded-full border-[1.4px] border-black bg-white/90 backdrop-blur-sm hover:bg-white hover:border-black/80 transition-all duration-300 shadow-md"
+                        >
+                            <svg
+                                class="w-5 h-7 sm:w-6 sm:h-9 rotate-90 text-black"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                                stroke-width="2.5"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M9 5l7 7-7 7"
+                                />
+                            </svg>
+                            <span
+                                class="font-poppins font-medium text-black text-sm sm:text-[13px] tracking-[-0.4px]"
+                            >
+                                Select your size
+                            </span>
+                        </button>
+                    </div>
+
+                    <!-- Size indicators - smaller, closer to original proportions -->
+                    <div
+                        class="absolute bottom-[10%] lg:bottom-[11%] left-1/2 -translate-x-1/2 flex items-end justify-center gap-2 sm:gap-2 lg:gap-6 xl:gap-6 z-20"
+                    >
+                        <div
+                            v-for="option in sizeOptions"
+                            :key="option.label"
+                            class="flex flex-col items-center"
+                        >
+                            <img
+                                :src="option.image"
+                                :alt="`${option.label} size`"
+                                class="w-[34px] sm:w-[38px] lg:w-[38px] xl:w-[42px] h-auto object-contain drop-shadow-sm"
+                                loading="lazy"
+                            />
+                            <span
+                                class="mt-1.5 lg:mt-2 font-poppins font-light text-black text-[10px] sm:text-xs lg:text-[11.6px] tracking-[-0.58px]"
+                            >
+                                {{ option.label }}
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -138,44 +161,15 @@
 </template>
 
 <script setup lang="ts">
-import Button from "~/components/ui/Button.vue";
+interface SizeOption {
+    label: string;
+    image: string;
+}
 
-const sizeOptions = [
-    {
-        label: "25g",
-        image: "/group-67.png",
-        top: "top-7",
-        left: "left-0",
-        width: "w-[38px]",
-        height: "h-[19px]",
-        textLeft: "left-[9px]",
-    },
-    {
-        label: "45g",
-        image: "/group-66.png",
-        top: "top-[21px]",
-        left: "left-[66px]",
-        width: "w-[38px]",
-        height: "h-[26px]",
-        textLeft: "left-[75px]",
-    },
-    {
-        label: "65g",
-        image: "/group-64.png",
-        top: "top-[13px]",
-        left: "left-[131px]",
-        width: "w-[38px]",
-        height: "h-[34px]",
-        textLeft: "left-[141px]",
-    },
-    {
-        label: "100g",
-        image: "/group-65.png",
-        top: "top-0",
-        left: "left-[197px]",
-        width: "w-[38px]",
-        height: "h-[47px]",
-        textLeft: "left-[207px]",
-    },
+const sizeOptions: SizeOption[] = [
+    { label: "25g", image: "/group-67.png" },
+    { label: "45g", image: "/group-66.png" },
+    { label: "65g", image: "/group-64.png" },
+    { label: "100g", image: "/group-65.png" },
 ];
 </script>

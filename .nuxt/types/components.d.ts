@@ -16,12 +16,12 @@ type LazyComponent<T> = DefineComponent<HydrationStrategies, {}, {}, {}, {}, {},
 interface _GlobalComponents {
   'AppFooter': typeof import("../../components/AppFooter.vue").default
   'AppNavigation': typeof import("../../components/AppNavigation.vue").default
+  'SectionsBenefitsSection': typeof import("../../components/sections/BenefitsSection.vue").default
   'SectionsCallToActionSection': typeof import("../../components/sections/CallToActionSection.vue").default
   'SectionsCertificationHighlightsSection': typeof import("../../components/sections/CertificationHighlightsSection.vue").default
   'SectionsHeroIntroSection': typeof import("../../components/sections/HeroIntroSection.vue").default
   'SectionsHowItWorksSection': typeof import("../../components/sections/HowItWorksSection.vue").default
   'SectionsPricingComparisonSection': typeof import("../../components/sections/PricingComparisonSection.vue").default
-  'SectionsPricingTableSection': typeof import("../../components/sections/PricingTableSection.vue").default
   'SectionsServiceFeaturesSection': typeof import("../../components/sections/ServiceFeaturesSection.vue").default
   'SectionsTestimonialsSection': typeof import("../../components/sections/TestimonialsSection.vue").default
   'UiButton': typeof import("../../components/ui/Button.vue").default
@@ -53,12 +53,12 @@ interface _GlobalComponents {
   'NuxtIsland': typeof import("../../node_modules/nuxt/dist/app/components/nuxt-island").default
   'LazyAppFooter': LazyComponent<typeof import("../../components/AppFooter.vue").default>
   'LazyAppNavigation': LazyComponent<typeof import("../../components/AppNavigation.vue").default>
+  'LazySectionsBenefitsSection': LazyComponent<typeof import("../../components/sections/BenefitsSection.vue").default>
   'LazySectionsCallToActionSection': LazyComponent<typeof import("../../components/sections/CallToActionSection.vue").default>
   'LazySectionsCertificationHighlightsSection': LazyComponent<typeof import("../../components/sections/CertificationHighlightsSection.vue").default>
   'LazySectionsHeroIntroSection': LazyComponent<typeof import("../../components/sections/HeroIntroSection.vue").default>
   'LazySectionsHowItWorksSection': LazyComponent<typeof import("../../components/sections/HowItWorksSection.vue").default>
   'LazySectionsPricingComparisonSection': LazyComponent<typeof import("../../components/sections/PricingComparisonSection.vue").default>
-  'LazySectionsPricingTableSection': LazyComponent<typeof import("../../components/sections/PricingTableSection.vue").default>
   'LazySectionsServiceFeaturesSection': LazyComponent<typeof import("../../components/sections/ServiceFeaturesSection.vue").default>
   'LazySectionsTestimonialsSection': LazyComponent<typeof import("../../components/sections/TestimonialsSection.vue").default>
   'LazyUiButton': LazyComponent<typeof import("../../components/ui/Button.vue").default>
