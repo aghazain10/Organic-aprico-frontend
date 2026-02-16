@@ -66,6 +66,7 @@ project/
 ### Installation
 
 1. Install dependencies:
+
 ```bash
 npm install
 ```
@@ -73,6 +74,7 @@ npm install
 ### Development
 
 Start the development server:
+
 ```bash
 npm run dev
 ```
@@ -82,6 +84,7 @@ The site will be available at `http://localhost:3000`
 ### Build for Production
 
 Build the application:
+
 ```bash
 npm run build
 ```
@@ -89,6 +92,7 @@ npm run build
 ### Preview Production Build
 
 Preview the production build locally:
+
 ```bash
 npm run preview
 ```
@@ -96,6 +100,7 @@ npm run preview
 ### Generate Static Site
 
 Generate a static version of the site:
+
 ```bash
 npm run generate
 ```
@@ -105,6 +110,7 @@ npm run generate
 ### UI Components
 
 Reusable base components located in `components/ui/`:
+
 - **Button**: Flexible button component with multiple variants (default, outline, ghost, etc.)
 - **Card**: Container component for content grouping
 - **CardContent**: Content wrapper for cards
@@ -113,6 +119,7 @@ Reusable base components located in `components/ui/`:
 ### Section Components
 
 Page sections located in `components/sections/`:
+
 - Each section is self-contained and reusable
 - Data is managed within components using Vue's composition API
 - Responsive design built into each section
@@ -148,29 +155,30 @@ The project uses Tailwind CSS with custom configurations:
 To connect this frontend to your Laravel backend:
 
 1. **API Configuration**: Create an `.env` file with your API URL:
+
 ```env
 NUXT_PUBLIC_API_BASE=https://your-laravel-api.com/api
 ```
 
 2. **Create API Service**: Add a composable in `composables/useApi.ts`:
+
 ```typescript
 export const useApi = () => {
-  const config = useRuntimeConfig()
+    const config = useRuntimeConfig();
 
-  return $fetch.create({
-    baseURL: config.public.apiBase
-  })
-}
+    return $fetch.create({
+        baseURL: config.public.apiBase,
+    });
+};
 ```
 
 3. **Make API Calls**: Use the composable in your components:
+
 ```vue
 <script setup>
-const api = useApi()
+const api = useApi();
 
-const { data } = await useAsyncData('products', () =>
-  api('/products')
-)
+const { data } = await useAsyncData("products", () => api("/products"));
 </script>
 ```
 
@@ -184,6 +192,10 @@ This Nuxt application can be deployed to various platforms:
 - **Static Hosting**: Use `npm run generate` and deploy the `.output/public` folder
 - **Vercel/Netlify**: Connect your repository for automatic deployments
 - **Docker**: Create a Dockerfile for containerized deployment
+
+## Deployed Link:
+
+    https://698c91af3baa4b00096a00f4--organicaprico.netlify.app/
 
 ## Browser Support
 
