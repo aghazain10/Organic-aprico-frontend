@@ -16,8 +16,12 @@ type LazyComponent<T> = DefineComponent<HydrationStrategies, {}, {}, {}, {}, {},
 
 export const AppFooter: typeof import("../components/AppFooter.vue").default
 export const AppNavigation: typeof import("../components/AppNavigation.vue").default
+export const ProductCard: typeof import("../components/product/ProductCard.vue").default
+export const ProductGrid: typeof import("../components/product/ProductGrid.vue").default
 export const SectionsBenefitsSection: typeof import("../components/sections/BenefitsSection.vue").default
 export const SectionsCallToActionSection: typeof import("../components/sections/CallToActionSection.vue").default
+export const SectionsCartSection: typeof import("../components/sections/CartSection.vue").default
+export const SectionsCertificateCard: typeof import("../components/sections/CertificateCard.vue").default
 export const SectionsCertificationHighlightsSection: typeof import("../components/sections/CertificationHighlightsSection.vue").default
 export const SectionsHeroIntroSection: typeof import("../components/sections/HeroIntroSection.vue").default
 export const SectionsHowItWorksSection: typeof import("../components/sections/HowItWorksSection.vue").default
@@ -53,8 +57,12 @@ export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const NuxtIsland: typeof import("../node_modules/nuxt/dist/app/components/nuxt-island").default
 export const LazyAppFooter: LazyComponent<typeof import("../components/AppFooter.vue").default>
 export const LazyAppNavigation: LazyComponent<typeof import("../components/AppNavigation.vue").default>
+export const LazyProductCard: LazyComponent<typeof import("../components/product/ProductCard.vue").default>
+export const LazyProductGrid: LazyComponent<typeof import("../components/product/ProductGrid.vue").default>
 export const LazySectionsBenefitsSection: LazyComponent<typeof import("../components/sections/BenefitsSection.vue").default>
 export const LazySectionsCallToActionSection: LazyComponent<typeof import("../components/sections/CallToActionSection.vue").default>
+export const LazySectionsCartSection: LazyComponent<typeof import("../components/sections/CartSection.vue").default>
+export const LazySectionsCertificateCard: LazyComponent<typeof import("../components/sections/CertificateCard.vue").default>
 export const LazySectionsCertificationHighlightsSection: LazyComponent<typeof import("../components/sections/CertificationHighlightsSection.vue").default>
 export const LazySectionsHeroIntroSection: LazyComponent<typeof import("../components/sections/HeroIntroSection.vue").default>
 export const LazySectionsHowItWorksSection: LazyComponent<typeof import("../components/sections/HowItWorksSection.vue").default>

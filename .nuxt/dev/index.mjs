@@ -647,7 +647,9 @@ const _inlineRuntimeConfig = {
       }
     }
   },
-  "public": {}
+  "public": {
+    "piniaPluginPersistedstate": {}
+  }
 };
 const envOptions = {
   prefix: "NITRO_",

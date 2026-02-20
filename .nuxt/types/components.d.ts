@@ -16,8 +16,12 @@ type LazyComponent<T> = DefineComponent<HydrationStrategies, {}, {}, {}, {}, {},
 interface _GlobalComponents {
   'AppFooter': typeof import("../../components/AppFooter.vue").default
   'AppNavigation': typeof import("../../components/AppNavigation.vue").default
+  'ProductCard': typeof import("../../components/product/ProductCard.vue").default
+  'ProductGrid': typeof import("../../components/product/ProductGrid.vue").default
   'SectionsBenefitsSection': typeof import("../../components/sections/BenefitsSection.vue").default
   'SectionsCallToActionSection': typeof import("../../components/sections/CallToActionSection.vue").default
+  'SectionsCartSection': typeof import("../../components/sections/CartSection.vue").default
+  'SectionsCertificateCard': typeof import("../../components/sections/CertificateCard.vue").default
   'SectionsCertificationHighlightsSection': typeof import("../../components/sections/CertificationHighlightsSection.vue").default
   'SectionsHeroIntroSection': typeof import("../../components/sections/HeroIntroSection.vue").default
   'SectionsHowItWorksSection': typeof import("../../components/sections/HowItWorksSection.vue").default
@@ -53,8 +57,12 @@ interface _GlobalComponents {
   'NuxtIsland': typeof import("../../node_modules/nuxt/dist/app/components/nuxt-island").default
   'LazyAppFooter': LazyComponent<typeof import("../../components/AppFooter.vue").default>
   'LazyAppNavigation': LazyComponent<typeof import("../../components/AppNavigation.vue").default>
+  'LazyProductCard': LazyComponent<typeof import("../../components/product/ProductCard.vue").default>
+  'LazyProductGrid': LazyComponent<typeof import("../../components/product/ProductGrid.vue").default>
   'LazySectionsBenefitsSection': LazyComponent<typeof import("../../components/sections/BenefitsSection.vue").default>
   'LazySectionsCallToActionSection': LazyComponent<typeof import("../../components/sections/CallToActionSection.vue").default>
+  'LazySectionsCartSection': LazyComponent<typeof import("../../components/sections/CartSection.vue").default>
+  'LazySectionsCertificateCard': LazyComponent<typeof import("../../components/sections/CertificateCard.vue").default>
   'LazySectionsCertificationHighlightsSection': LazyComponent<typeof import("../../components/sections/CertificationHighlightsSection.vue").default>
   'LazySectionsHeroIntroSection': LazyComponent<typeof import("../../components/sections/HeroIntroSection.vue").default>
   'LazySectionsHowItWorksSection': LazyComponent<typeof import("../../components/sections/HowItWorksSection.vue").default>
